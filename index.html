@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="./css/main.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+	<title>Api Math Magnitudes</title>
+</head>
+
+<body>
+	<main>
+		<nav id="navbar">
+			<h1>Math Magnitudes</h1>
+			<ul class="list-content">
+				<li><a href="#temperature">Temperature</a></li>
+				<li><a href="#volume">Volume</a></li>
+				<li><a href="#time">Time</a></li>
+				<li><a href="#weight">Weight</a></li>
+				<li><a href="#surface">Surface</a></li>
+				<li><a href="#length">Length</a></li>
+				<li><a href="#liquids">Liquids</a></li>
+			</ul>
+		</nav>
+		<section id="content">
+
+			<h2>Convert <strong>measures</strong> of all kinds:</h2>
+
+			<h3 id="end-points">End Points</h3>
+
+			<ul class="end-points">
+				<li>
+					<em>/api/magnitudes/</em> =&gt; <strong>Returns an array of objects with all magnitude classes.</strong>
+				</li>
+				<li>
+					<em>/api/magnitudes/[magnitude-class]</em> =&gt; <strong>Returns an array with all the magnitudes of that class.</strong>
+				</li>
+				<li>
+					<em>/api/magnitudes/[class]/[magnitude]</em> =&gt; <strong>Returns an object with the magnitudes to which it can be
+					converted and their respective values.</strong>
+				</li>
+				<li>
+					<p><em>/api/magnitudes/[class]/[magnitude-to-magnitude]</em> =&gt; <strong>Returns an object with the value of the
+						converted magnitude and the magnitude passed as a parameter.</strong></p>
+				</li>
+			</ul>
+
+			<p>Ejm: <em>/api/magnitudes/volumen/cubic-meters-to-cubic-inchs</em></p>
+			<pre>
+				<code class="language-json">{   "cubic-inchs": 732285,   "cubic-meters": 12 }</code>
+			</pre>
+			
+			<div id="temperature">
+				<h3>Temperature</h3>
+			</div>
+			<div id="volume">
+				<h3>Volume</h3>
+			</div>
+			<div id="time">
+				<h3>Time</h3>
+			</div>
+			<div id="weight">
+				<h3>Weight</h3>
+			</div>
+			<div id="surface">
+				<h3>Surface</h3>
+			</div>
+			<div id="length">
+				<h3>Length</h3>
+			</div>
+			<div id="liquids">
+				<h3>Liquids</h3>
+			</div>
+			<footer>
+				<a href="https://github.com/slydragonn" target="_blank">Github</a>
+			</footer>
+		</section>
+	</main>
+	<script>hljs.highlightAll();</script>
+</body>
+
+</html>
